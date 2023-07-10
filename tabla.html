@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="2.css">
+    <title>Tabla personalizada</title>
+  </head>
+  <body>
+    <section class="form_inputs">
+   <h1> Tu tabla personalizada </h1>
+   <p> Ingresa el número de filas y columnas que quieres que tenga tu tabla </p>
+   <p>
+     <label for="num-rows" class="custom-label">Número de filas:</label>
+     <input type="text" class="caja_texto" id="num-rows" min="1">
+     <br>
+    </p>
+     <p>
+     <label for="num-cols"class="custom-label">Número de columnas:</label>
+     <input type="text" class="caja_texto" id="num-cols" min="1">
+     <br>
+      </p>
+       <p>
+     <label for="line-color" class="custom-label">Escoge un color:</label>
+     <input type="color" class="boton_color" id="line-color">
+     <button id="draw-lines-btn" class="boton">Graficar tabla</button>
+       </p>
+     <canvas width="600" height="400" id="canvas"></canvas>
+<script src="3.js"></script>
+</body>
+</html>
